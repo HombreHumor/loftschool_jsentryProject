@@ -2,21 +2,14 @@
 
 module.exports = function(){
   $.gulp.task('copy:image', () => {
-    return $.gulp.src([$.config.source + '/images/**/*.{jpg,png,gif}', $.config.source + '/images/icon/*.svg'])
+    return $.gulp.src($.config.source + '/images/**/*.{jpg,png,gif}')
       .pipe($.gp.newer($.config.root + '/images'))
-      .pipe($.gp.debug({
-        title: 'src'
-      }))
-      // .pipe($.gp.tinypng('YOUR_API_KEY'))
-      .pipe($.gp.imagemin({
-        interlaced: true,
-        progressive: true,
-        optimizationLevel: 5
-      }))
-      .pipe($.gp.debug({
-        title: 'minify'
-      }))
-      .pipe($.gp.filesize())
       .pipe($.gulp.dest($.config.root + '/images'));
+  });
+
+  $.gulp.task('svg:copy', () => {
+    return $.gulp.src($.config.source + '/images/**/*.svg')
+      .pipe($.gp.newer($.config.root + '/images'))
+      .pipe($.gulp.dest($.config.root + '/images'))
   });
 };

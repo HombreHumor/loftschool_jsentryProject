@@ -1,0 +1,34 @@
+header.section-welcome__header.header
+  .header__logo
+    a.logo(href="#")
+      img.logo__icon(src="./images/icon/logo.svg", alt="Mr. Buurger")
+  .header__actions
+    .header__menu
+      nav.navigation
+        ul.navigation__list
+          li.navigation__item
+            a.navigation__link(href="") о нас
+          li.navigation__item
+            a.navigation__link(href="") бургеры
+          li.navigation__item
+            a.navigation__link(href="") команда
+          li.navigation__item
+            a.navigation__link(href="") меню
+          li.navigation__item
+            a.navigation__link(href="") отзывы
+          li.navigation__item
+            a.navigation__link(href="") контакты
+    .header__buttons
+      a.header__order-button.btn(href="") Заказать
+      a.header__hamburger-button.hamburger-button(href="")
+        .hamburger-button__bars
+.section-welcome__container
+  .section-welcome__content
+    figure.section-welcome__left
+      img.section-welcome__big-burger(src="./images/content/section-welcome/big-burger.png", alt="Мы делаем натуральные бургеры")
+    article.section-welcome__right
+      h2.section__title Мы делаем
+      b.section-welcome__description Натуральные бургеры
+a.section__down-btn.down-btn(href="#")
+  svg.down-btn__icon
+    use(xlink:href="./images/sprite/icons.svg#arrow-scroll", x=0, y=0)

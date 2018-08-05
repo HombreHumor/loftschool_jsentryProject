@@ -10,6 +10,6 @@ module.exports = [
   './gulp/tasks/serve',
   './gulp/tasks/watch',
   './gulp/tasks/fonts',
-  './gulp/tasks/image',
-  './gulp/tasks/svg.copy'
+  './gulp/tasks/svg.sprite',
+  './gulp/tasks/image'
 ]

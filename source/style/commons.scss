@@ -17,15 +17,19 @@
 @import 'layout/navigation';
 @import 'layout/footer';
 
-@import 'pages/section-welcome';
-@import 'pages/section-we';
-@import 'pages/section-burgers';
-@import 'pages/section-team';
-@import 'pages/section-menu';
-@import 'pages/section-reviews';
-@import 'pages/section-howwork';
-@import 'pages/section-form';
-@import 'pages/section-contacts';
+@import 'blocks/header';
+@import 'blocks/logo';
+@import 'blocks/navigation';
+@import 'blocks/hamburger-button';
+@import 'blocks/section-welcome';
+@import 'blocks/section-we';
+@import 'blocks/section-burgers';
+@import 'blocks/section-team';
+@import 'blocks/section-menu';
+@import 'blocks/section-reviews';
+@import 'blocks/section-howwork';
+@import 'blocks/section-form';
+@import 'blocks/section-contacts';
 
 @import 'themes/themes';
 

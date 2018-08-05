@@ -3,5 +3,6 @@
 module.exports = {
   root: './build',
   source: './source',
-  data: './data'
+  data: './data',
+  temp: './temp'
 }

@@ -19,15 +19,176 @@
   <body class="home">
     <div class="wrapper">
       <main class="main">
-        <section class="main__section-welcome section-welcome"></section>
-        <section class="main__section-we section-we"></section>
-        <section class="main__section-burgers section-burgers"></section>
-        <section class="main__section-team section-team"></section>
-        <section class="main__section-menu section-menu"></section>
-        <section class="main__section-reviews section-reviews"></section>
-        <section class="main__section-howwork section-howwork"></section>
-        <section class="main__section-form section-form"></section>
-        <section class="main__section-contacts section-contacts"></section>
+        <section class="section main__section-welcome section-welcome">
+          <div class="container">
+            <header class="section-welcome__header header">
+              <div class="header__logo"><a class="logo" href="#"><img class="logo__icon" src="./images/icon/logo.svg" alt="Mr. Buurger"></a></div>
+              <div class="header__actions">
+                <div class="header__menu">
+                  <nav class="navigation">
+                    <ul class="navigation__list">
+                      <li class="navigation__item"><a class="navigation__link" href="">о нас</a></li>
+                      <li class="navigation__item"><a class="navigation__link" href="">бургеры</a></li>
+                      <li class="navigation__item"><a class="navigation__link" href="">команда</a></li>
+                      <li class="navigation__item"><a class="navigation__link" href="">меню</a></li>
+                      <li class="navigation__item"><a class="navigation__link" href="">отзывы</a></li>
+                      <li class="navigation__item"><a class="navigation__link" href="">контакты</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="header__buttons"><a class="header__order-button btn" href="">Заказать</a><a class="header__hamburger-button hamburger-button" href="">
+                    <div class="hamburger-button__bars"></div></a></div>
+              </div>
+            </header>
+            <div class="section-welcome__container">
+              <div class="section-welcome__content">
+                <figure class="section-welcome__left"><img class="section-welcome__big-burger" src="./images/content/section-welcome/big-burger.png" alt="Мы делаем натуральные бургеры"></figure>
+                <article class="section-welcome__right">
+                  <h2 class="section__title">Мы делаем</h2><b class="section-welcome__description">Натуральные бургеры</b>
+                </article>
+              </div>
+            </div><a class="section__down-btn down-btn" href="#">
+              <svg class="down-btn__icon">
+                <use xlink:href="./images/sprite/icons.svg#arrow-scroll" x="0" y="0"></use>
+              </svg></a>
+          </div>
+        </section>
+        <section class="section main__section-we section-we">
+          <div class="container">
+            <h2 class="section__title section__title_black">Мы лучшие</h2>
+            <ul class="section-we__list">
+              <li class="section-we__item">
+                <figure class="section-we__icon">
+                  <svg class="section-we__icon-svg section-we__icon-svg--meat" style="fill: #e25028;">
+                    <use xlink:href="./images/sprite/icons.svg#meat" x="0" y="-854"></use>
+                  </svg>
+                </figure>
+                <article class="section-we__description">
+                  <h3 class="section-we__title">100% свежее мясо</h3>
+                  <div class="section-we__text text-block">
+                    <p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</p>
+                  </div>
+                </article>
+              </li>
+              <li class="section-we__item">
+                <figure class="section-we__icon">
+                  <svg class="section-we__icon-svg section-we__icon-svg--hand" style="fill: #f8b43a;">
+                    <use xlink:href="./images/sprite/icons.svg#hand" x="0" y="-397"></use>
+                  </svg>
+                </figure>
+                <article class="section-we__description">
+                  <h3 class="section-we__title">Ручная сборка</h3>
+                  <div class="section-we__text text-block">
+                    <p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</p>
+                  </div>
+                </article>
+              </li>
+              <li class="section-we__item">
+                <figure class="section-we__icon">
+                  <svg class="section-we__icon-svg section-we__icon-svg--natural" style="fill: #8ac03e;">
+                    <use xlink:href="./images/sprite/icons.svg#natural" x="0" y="-943"></use>
+                  </svg>
+                </figure>
+                <article class="section-we__description">
+                  <h3 class="section-we__title">Натуральные ингредиенты</h3>
+                  <div class="section-we__text text-block">
+                    <p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="section main__section-burgers section-burgers"></section>
+        <section class="section main__section-team section-team"></section>
+        <section class="section main__section-menu section-menu"></section>
+        <section class="section main__section-reviews section-reviews">
+          <ul class="section-reviews__list">
+            <li class="section-reviews__item">
+              <article class="section-reviews__review review">
+                <figure class="review__photo" style="background-image: url('./images/content/reviews/review-1.png');"></figure>
+                <div class="review__hover">
+                  <h2 class="review__title">Александра Горнова</h2>
+                  <p class="review__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                  <div class="review__button-wrap"><a class="review__view" href="#full">Подробнее</a></div>
+                </div>
+              </article>
+            </li>
+            <li class="section-reviews__item">
+              <article class="section-reviews__review review">
+                <figure class="review__photo" style="background-image: url('./images/content/reviews/review-2.png');"></figure>
+                <div class="review__hover">
+                  <h2 class="review__title">Константин Спилберг</h2>
+                  <p class="review__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                  <div class="review__button-wrap"><a class="review__view" href="#full">Подробнее</a></div>
+                </div>
+              </article>
+            </li>
+            <li class="section-reviews__item">
+              <article class="section-reviews__review review">
+                <figure class="review__photo" style="background-image: url('./images/content/reviews/review-3.png');"></figure>
+                <div class="review__hover">
+                  <h2 class="review__title">Кристина Павлова</h2>
+                  <p class="review__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                  <div class="review__button-wrap"><a class="review__view" href="#full">Подробнее</a></div>
+                </div>
+              </article>
+            </li>
+            <li class="section-reviews__item">
+              <article class="section-reviews__review review">
+                <figure class="review__photo" style="background-image: url('./images/content/reviews/review-4.png');"></figure>
+                <div class="review__hover">
+                  <h2 class="review__title">Иван Нарзов</h2>
+                  <p class="review__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                  <div class="review__button-wrap"><a class="review__view" href="#full">Подробнее</a></div>
+                </div>
+              </article>
+            </li>
+            <li class="section-reviews__item">
+              <article class="section-reviews__review review">
+                <figure class="review__photo" style="background-image: url('./images/content/reviews/review-5.png');"></figure>
+                <div class="review__hover">
+                  <h2 class="review__title">Майк Анкридж</h2>
+                  <p class="review__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                  <div class="review__button-wrap"><a class="review__view" href="#full">Подробнее</a></div>
+                </div>
+              </article>
+            </li>
+            <li class="section-reviews__item">
+              <article class="section-reviews__review review">
+                <figure class="review__photo" style="background-image: url('./images/content/reviews/review-6.png');"></figure>
+                <div class="review__hover">
+                  <h2 class="review__title">Ксения Аврелина</h2>
+                  <p class="review__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                  <div class="review__button-wrap"><a class="review__view" href="#full">Подробнее</a></div>
+                </div>
+              </article>
+            </li>
+            <li class="section-reviews__item">
+              <article class="section-reviews__review review">
+                <figure class="review__photo" style="background-image: url('./images/content/reviews/review-7.png');"></figure>
+                <div class="review__hover">
+                  <h2 class="review__title">Стивен Пилберг</h2>
+                  <p class="review__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                  <div class="review__button-wrap"><a class="review__view" href="#full">Подробнее</a></div>
+                </div>
+              </article>
+            </li>
+            <li class="section-reviews__item">
+              <article class="section-reviews__review review">
+                <figure class="review__photo" style="background-image: url('./images/content/reviews/review-8.png');"></figure>
+                <div class="review__hover">
+                  <h2 class="review__title">Джаред Винтер</h2>
+                  <p class="review__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+                  <div class="review__button-wrap"><a class="review__view" href="#full">Подробнее</a></div>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </section>
+        <section class="section main__section-howwork section-howwork"></section>
+        <section class="section main__section-form section-form"></section>
+        <section class="section main__section-contacts section-contacts"></section>
       </main>
     </div>
     <script src="./js/vendor.min.js" defer></script>

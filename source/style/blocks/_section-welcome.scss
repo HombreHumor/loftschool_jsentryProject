@@ -1,0 +1,72 @@
+
+.section-welcome {
+  background: url('../images/background/bg-section-1.png') center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.section-welcome__content {
+  display: flex;
+}
+
+.section-welcome__container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 15%;
+}
+
+.section-welcome__left,
+.section-welcome__right {
+  float: left;
+  width: 50%;
+}
+
+.section-welcome__right {
+  padding-top: rem(115px);
+}
+
+.section-welcome__description {
+  font-size: rem(65px);
+  color: white;
+  @include lifehack;
+  text-transform: lowercase;
+  line-height: 1em;
+}
+
+.section-welcome__big-burger {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.down-btn {
+  position: absolute;
+  bottom: rem(20px);
+  left: 50%;
+  width: rem(60px);
+  transform: translateX(-50%);
+  transition: .3s;
+  height: rem(60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    .down-btn__icon {
+      margin-top: rem(-15px);
+      width: rem(45px);
+      height: rem(45px);
+    }
+  }
+}
+
+.down-btn__icon {
+  width: rem(40px);
+  height: rem(40px);
+  transition: .3s;
+  fill: #fff;
+}

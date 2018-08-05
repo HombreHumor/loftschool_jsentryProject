@@ -16,7 +16,8 @@ global.$ = {
 
   config: require('./gulp/config'),
 
-  isDev: !process.env.NODE_ENV || process.env.NODE_ENV == 'development'
+  isDev: process.env.NODE_ENV === 'development',
+  isProd: process.env.NODE_ENV === 'production'
 
 };
 
@@ -32,6 +33,7 @@ $.gulp.task('default', $.gulp.series(
     'js:process',
     'js:vendor',
     'css:vendor',
+    'svg:sprite',
     'copy:image',
     'svg:copy',
     'copy:fonts'

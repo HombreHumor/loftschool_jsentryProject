@@ -15,7 +15,7 @@ module.exports = function(){
       .pipe($.gp.if($.isDev, $.gp.sourcemaps.init()))
       .pipe($.gp.concat('common.js'))
       .pipe($.gp.if($.isDev, $.gp.sourcemaps.write()))
-      .pipe($.gp.if(!$.isDev, $.gp.uglify()))
+      .pipe($.gp.if($.isProd, $.gp.uglify()))
       .pipe($.gulp.dest($.config.root + '/js'))
       .pipe($.browserSync.stream());
   });

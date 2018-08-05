@@ -11,23 +11,12 @@ module.exports = function(){
           }
         })
       }))
-      .pipe($.gp.debug({
-        title: 'src'
-      }))
       .pipe($.gp.if($.isDev, $.gp.sourcemaps.init()))
       .pipe($.gp.sass())
-      .pipe($.gp.debug({
-        title: 'sass/scss'
-      }))
       .pipe($.gp.autoprefixer({
         browsers: ['last 5 versions']
       }))
-      .pipe($.gp.filesize())
-      .pipe($.gp.if(!$.isDev, $.gp.csso()))
-      .pipe($.gp.debug({
-        title: 'minify'
-      }))
-      .pipe($.gp.filesize())
+      .pipe($.gp.if($.isProd, $.gp.csso()))
       .pipe($.gp.if($.isDev, $.gp.sourcemaps.write()))
       .pipe($.gulp.dest($.config.root + '/css'))
       .pipe($.browserSync.stream())
