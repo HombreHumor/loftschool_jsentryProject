@@ -28,6 +28,7 @@
 }
 
 .section-welcome__description {
+  display: block;
   font-size: rem(65px);
   color: white;
   @include lifehack;

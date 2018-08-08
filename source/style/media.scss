@@ -99,3 +99,39 @@ html {
     display: none;
   }
 }
+
+@media screen and (max-width: 1660px) {
+  .review__photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+
+  .review__image {
+    width: auto;
+    max-width: none;
+    min-width: auto;
+    min-height: auto;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.review__image {
+  @include tablets {
+    width: 100%;
+    height: auto;
+  }
+
+  @include phones {
+    width: auto;
+  }
+}
