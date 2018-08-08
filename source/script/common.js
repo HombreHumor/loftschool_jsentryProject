@@ -1,4 +1,5 @@
 accordeon('.section-team__btn');
+accordeon('.section-menu__button');
 
 function accordeon(btn) {
   $(btn).on('click', function () {

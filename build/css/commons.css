@@ -557,8 +557,89 @@ button {
   font-size: 0.875rem; }
 
 .section-menu {
-  background-image: url("../images/background/bg-section-7.png");
-  background-size: cover; }
+  background: url("../images/background/bg-section-5.png") 50% no-repeat;
+  background-size: cover;
+  position: relative; }
+
+.section-menu__title {
+  position: absolute;
+  top: 10%;
+  left: 10%; }
+
+.section-menu__list {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.section-menu__item {
+  height: 100%; }
+  .section-menu__item.active .section-menu__item-title {
+    color: #f9b43b; }
+  .section-menu__item.active .section-menu__item-content {
+    width: 35rem; }
+  .section-menu__item.active .section-menu__text {
+    display: block; }
+  .section-menu__item.active .section-menu__button:hover .section-menu__item-title {
+    cursor: default; }
+
+.section-menu__button {
+  width: 5rem;
+  display: block;
+  height: 100%;
+  float: left;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  position: relative; }
+
+.section-menu__button:hover .section-menu__item-title {
+  cursor: pointer;
+  color: #f9b43b; }
+
+.section-menu__item-title {
+  font-size: 2.5rem;
+  color: #fff;
+  font-family: 'Gagalin', Helvetica, sans-serif;
+  text-align: center;
+  white-space: nowrap;
+  position: absolute;
+  -webkit-transform: rotate(-90deg) translateY(-50%);
+      -ms-transform: rotate(-90deg) translateY(-50%);
+          transform: rotate(-90deg) translateY(-50%);
+  -webkit-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+          transform-origin: 0 0;
+  left: 50%;
+  top: 100%;
+  margin-top: -1.25rem;
+  -webkit-transition: color .3s ease;
+  -o-transition: color .3s ease;
+  transition: color .3s ease; }
+
+.section-menu__item-content {
+  height: 100%;
+  float: left;
+  background: rgba(47, 50, 52, 0.93);
+  width: 0;
+  overflow: hidden;
+  -webkit-transition: width .3s ease;
+  -o-transition: width .3s ease;
+  transition: width .3s ease; }
+
+.section-menu__text {
+  font-family: 'Ubuntu';
+  font-weight: 300;
+  font-size: 0.875rem;
+  color: #fff;
+  padding: 3.75rem 1.875rem;
+  width: 100%;
+  line-height: 1.8;
+  display: none; }
 
 .section-reviews {
   background-color: #000000; }

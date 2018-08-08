@@ -1,4 +1,86 @@
 .section-menu {
-  background-image: url('../images/background/bg-section-7.png');
+  background: url('../images/background/bg-section-5.png') 50% no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+.section-menu__title {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.section-menu__list {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+}
+
+.section-menu__item {
+  height: 100%;
+  &.active {
+    .section-menu__item-title {
+      color: $yellow;
+    }
+    .section-menu__item-content {
+      width: rem(560px);
+    }
+    .section-menu__text {
+      display: block;
+    }
+    .section-menu__button:hover .section-menu__item-title {
+      cursor: default;
+    }
+  }
+}
+
+.section-menu__button {
+  width: rem(80px);
+  display: block;
+  height: 100%;
+  float: left;
+  @include cover;
+  text-decoration: none;
+  position: relative;
+}
+
+.section-menu__button:hover .section-menu__item-title {
+  cursor: pointer;
+  color: $yellow;
+}
+
+.section-menu__item-title {
+  font-size: rem(40px);
+  color: #fff;
+  @include gagalin;
+  text-align: center;
+  white-space: nowrap;
+  position: absolute;
+  transform: rotate(-90deg) translateY(-50%);
+  transform-origin: 0 0;
+  left: 50%;
+  top: 100%;
+  margin-top: rem(-20px);
+  transition: color .3s ease;
+}
+
+.section-menu__item-content {
+  height: 100%;
+  float: left;
+  background: rgba(#2f3234, .93);
+  width: 0;
+  overflow: hidden;
+  transition: width .3s ease;
+}
+
+.section-menu__text {
+  @include ubuntu(light);
+  font-size: rem(14px);
+  color: #fff;
+  padding: rem(60px) rem(30px);
+  width: 100%;
+  line-height: 1.8;
+  display: none;
 }
