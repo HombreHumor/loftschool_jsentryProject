@@ -214,3 +214,18 @@ html {
     justify-content: center;
   }
 }
+
+.section-form__content {
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+}
+
+.section-form__column {
+  @include phones {
+    width: 100%;
+    margin-left: 0;
+  }
+}

@@ -191,3 +191,19 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; } }
+
+@media screen and (max-width: 768px) {
+  .section-form__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 0; } }
+
+@media screen and (max-width: 480px) {
+  .section-form__column {
+    width: 100%;
+    margin-left: 0; } }

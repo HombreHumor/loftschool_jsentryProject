@@ -279,7 +279,82 @@
           </ul>
         </section>
         <section class="section main__section-howwork section-howwork"></section>
-        <section class="section main__section-form section-form"></section>
+        <section class="section main__section-form section-form">
+          <div class="container">
+            <h2 class="section__title">Закажите доставку</h2>
+            <form class="section-form__form" id="section-form__form" action="">
+              <div class="section-form__content">
+                <div class="section-form__column">
+                  <div class="section-form__row">
+                    <label class="section-form__block">
+                      <div class="section-form__label">Имя</div>
+                      <input class="section-form__input" type="text" name="name">
+                    </label>
+                    <label class="section-form__block">
+                      <div class="section-form__label">Телефон</div>
+                      <input class="section-form__input" type="text" name="phone">
+                    </label>
+                  </div>
+                  <div class="section-form__row">
+                    <label class="section-form__block">
+                      <div class="section-form__label">Улица</div>
+                      <input class="section-form__input" type="text" name="street">
+                    </label>
+                  </div>
+                  <div class="section-form__row">
+                    <label class="section-form__block">
+                      <div class="section-form__label">Дом</div>
+                      <input class="section-form__input" type="text" name="home">
+                    </label>
+                    <label class="section-form__block">
+                      <div class="section-form__label">Корпус</div>
+                      <input class="section-form__input" type="text" name="housing">
+                    </label>
+                    <label class="section-form__block">
+                      <div class="section-form__label">Квартира</div>
+                      <input class="section-form__input" type="text" name="appartment">
+                    </label>
+                    <label class="section-form__block">
+                      <div class="section-form__label">Этаж</div>
+                      <input class="section-form__input" type="text" name="floor">
+                    </label>
+                  </div>
+                </div>
+                <div class="section-form__column">
+                  <div class="section-form__row">
+                    <label class="section-form__block">
+                      <div class="section-form__label">Комментарий</div>
+                      <textarea class="section-form__input section-form__textarea" name="comment"></textarea>
+                    </label>
+                  </div>
+                  <div class="section-form__row">
+                    <label class="section-form__radio">
+                      <input class="section-form__radio-elem" type="radio" name="payment">
+                      <div class="section-form__radio-fake"></div>
+                      <h3 class="section-form__radio-title">Потребуется сдача</h3>
+                    </label>
+                    <label class="section-form__radio">
+                      <input class="section-form__radio-elem" type="radio" name="payment">
+                      <div class="section-form__radio-fake"></div>
+                      <h3 class="section-form__radio-title">Оплата по карте</h3>
+                    </label>
+                  </div>
+                  <div class="section-form__row">
+                    <label class="section-form__radio section-form__radio--checkbox">
+                      <input class="section-form__radio-elem" type="checkbox" name="callback">
+                      <div class="section-form__radio-fake"></div>
+                      <h3 class="section-form__radio-title">Не перезванивать</h3>
+                    </label>
+                  </div>
+                  <div class="section-form__row">
+                    <input class="section-form__button" type="submit" value="Заказать">
+                    <input class="section-form__button section-form__button--reset" type="reset" value="Очистить">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
         <section class="section main__section-contacts section-contacts">
           <div class="yandex-map" id="map"></div>
           <footer class="footer">
