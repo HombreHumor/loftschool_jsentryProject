@@ -173,3 +173,21 @@
 @media screen and (max-width: 768px) {
   .section-team__item.active .section-team__item-content {
     height: 175px; } }
+
+@media screen and (max-width: 480px) {
+  .footer__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
+@media screen and (max-width: 480px) {
+  .footer__column {
+    width: 100%;
+    text-align: center; } }
+
+@media screen and (max-width: 480px) {
+  .footer__column--right {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }

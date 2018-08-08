@@ -195,3 +195,22 @@ html {
     }
   }
 }
+
+.footer__container {
+  @include phones {
+    flex-direction: column;
+  }
+}
+
+.footer__column {
+  @include phones {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.footer__column--right {
+  @include phones {
+    justify-content: center;
+  }
+}

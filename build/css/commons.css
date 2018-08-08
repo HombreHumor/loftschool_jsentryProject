@@ -747,9 +747,14 @@ button {
   background-image: url("../images/background/bg-section-8.png");
   background-size: cover; }
 
-.section-contacts {
+.yandex-map {
   background-image: url("../images/background/bg-section-9.png");
-  background-size: cover; }
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
 
 .pagepanel {
   position: fixed;
@@ -812,3 +817,77 @@ button {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
+
+.footer {
+  background: url("../images/background/bg-footer.png") center bottom no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.625rem 0; }
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.footer__column {
+  width: 50%;
+  margin-bottom: 0.9375rem; }
+
+.footer__address {
+  color: #ffffff;
+  font-size: 0.875rem; }
+
+.footer__phone {
+  color: #e35028;
+  font-family: 'Ubuntu';
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.875rem; }
+
+.footer__column--right {
+  text-align: right;
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+.socials {
+  position: relative;
+  top: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.socials__item {
+  margin: 0 0.625rem; }
+
+.socials__link {
+  display: inline-block;
+  max-width: 1.4375rem;
+  max-height: 1.25rem;
+  opacity: .3;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+  .socials__link:hover {
+    opacity: 1; }
+
+.socials__link-icon {
+  width: 1.875rem;
+  height: 1.25rem; }
