@@ -1,37 +1,53 @@
 @charset "UTF-8";
+/* ubuntu-300 - cyrillic_latin */
 @font-face {
   font-family: 'Ubuntu';
-  src: url("Ubuntu-Medium.woff2") format("woff2"), url("Ubuntu-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Ubuntu';
-  src: url("Ubuntu.woff2") format("woff2"), url("Ubuntu.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Ubuntu';
-  src: url("Ubuntu-Light.woff2") format("woff2"), url("Ubuntu-Light.woff") format("woff");
+  font-style: normal;
   font-weight: 300;
-  font-style: normal; }
+  src: url("../fonts/ubuntu-v12-cyrillic_latin-300.eot");
+  /* IE9 Compat Modes */
+  src: local("Ubuntu Light"), local("Ubuntu-Light"), url("../fonts/ubuntu-v12-cyrillic_latin-300.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu-v12-cyrillic_latin-300.woff2") format("woff2"), url("../fonts/ubuntu-v12-cyrillic_latin-300.woff") format("woff"), url("../fonts/ubuntu-v12-cyrillic_latin-300.ttf") format("truetype"), url("../fonts/ubuntu-v12-cyrillic_latin-300.svg#Ubuntu") format("svg");
+  /* Legacy iOS */ }
 
+/* ubuntu-regular - cyrillic_latin */
 @font-face {
   font-family: 'Ubuntu';
-  src: url("Ubuntu-Bold.woff2") format("woff2"), url("Ubuntu-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal; }
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ubuntu-v12-cyrillic_latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Ubuntu Regular"), local("Ubuntu-Regular"), url("../fonts/ubuntu-v12-cyrillic_latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu-v12-cyrillic_latin-regular.woff2") format("woff2"), url("../fonts/ubuntu-v12-cyrillic_latin-regular.woff") format("woff"), url("../fonts/ubuntu-v12-cyrillic_latin-regular.ttf") format("truetype"), url("../fonts/ubuntu-v12-cyrillic_latin-regular.svg#Ubuntu") format("svg");
+  /* Legacy iOS */ }
+
+/* ubuntu-500 - cyrillic_latin */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/ubuntu-v12-cyrillic_latin-500.eot");
+  /* IE9 Compat Modes */
+  src: local("Ubuntu Medium"), local("Ubuntu-Medium"), url("../fonts/ubuntu-v12-cyrillic_latin-500.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu-v12-cyrillic_latin-500.woff2") format("woff2"), url("../fonts/ubuntu-v12-cyrillic_latin-500.woff") format("woff"), url("../fonts/ubuntu-v12-cyrillic_latin-500.ttf") format("truetype"), url("../fonts/ubuntu-v12-cyrillic_latin-500.svg#Ubuntu") format("svg");
+  /* Legacy iOS */ }
+
+/* ubuntu-700 - cyrillic_latin */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ubuntu-v12-cyrillic_latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local("Ubuntu Bold"), local("Ubuntu-Bold"), url("../fonts/ubuntu-v12-cyrillic_latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu-v12-cyrillic_latin-700.woff2") format("woff2"), url("../fonts/ubuntu-v12-cyrillic_latin-700.woff") format("woff"), url("../fonts/ubuntu-v12-cyrillic_latin-700.ttf") format("truetype"), url("../fonts/ubuntu-v12-cyrillic_latin-700.svg#Ubuntu") format("svg");
+  /* Legacy iOS */ }
 
 @font-face {
   font-family: 'Lifehack';
-  src: url("Lifehack-Medium.woff2") format("woff2"), url("Lifehack-Medium.woff") format("woff");
+  src: url("../fonts/Lifehack-Medium.woff2") format("woff2"), url("../fonts/Lifehack-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'Gagalin';
-  src: url("Gagalin-Regular.woff2") format("woff2"), url("Gagalin-Regular.woff") format("woff");
+  src: url("../fonts/Gagalin-Regular.woff2") format("woff2"), url("../fonts/Gagalin-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
