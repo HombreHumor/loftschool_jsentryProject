@@ -1,4 +1,123 @@
 .section-team {
-  background-image: url('../images/background/bg-section-4.png');
+  background: url('../images/background/bg-section-4.png') 50% no-repeat;
   background-size: cover;
+  position: relative;
+  .section__title {
+    margin-bottom: 12%;
+  }
+}
+
+.section-team__container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background: rgba(#2f3234, .93);
+  padding: 5% 2% 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section-team__content {
+  
+
+}
+
+.section-team__item {
+  margin-bottom: rem(40px);
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &.active {
+    .section-team__btn {
+      color: $yellow;
+      &:before {
+        transform: rotate(-180deg);
+      }
+    }
+    .section-team__item-content {
+      height: rem(125px);
+    }
+  }
+}
+
+.section-team__btn {
+  color: #fff;
+  font-size: rem(14px);
+  @include gagalin;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  padding-left: rem(25px);
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: rem(0px);
+    top: rem(6px);
+    width: 0;
+    height: 0;
+  }
+  &:before {
+    border-top: rem(7px) solid $yellow;
+    border-left: rem(5px) solid transparent;
+    border-right: rem(5px) solid transparent;
+    border-bottom: rem(0px) solid transparent;
+    transform: rotate(0deg);
+    transition: .3s;
+  }
+  &:after {
+    display: none;
+    border-bottom: rem(7px) solid $yellow;
+    border-left: rem(5px) solid transparent;
+    border-right: rem(5px) solid transparent;
+    border-top: rem(0px) solid transparent;
+  }
+}
+
+.section-team__item-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 0;
+  overflow: hidden;
+  transition: height .3s ease;
+}
+
+.section-team__picture {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  flex-basis: 30%;
+}
+
+.section-team__image {
+  width: rem(100px);
+  height: rem(100px);
+  border-radius: 50%;
+}
+
+.section-team__text {
+  flex-basis: 70%;
+  text-align: left;
+}
+
+.section-team__item-title {
+  @include ubuntu(bold);
+  font-size: rem(14px);
+  color: #fff;
+  margin-bottom: rem(14px);
+}
+
+.section-team__text-content {
+  @include ubuntu(light);
+  color: #fff;
+  font-size: rem(14px);
 }

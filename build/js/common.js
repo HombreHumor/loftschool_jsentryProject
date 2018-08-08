@@ -1,4 +1,23 @@
 'use strict';
 
-var string = 'Hello';
-console.log(string + ' World');
+accordeon('.section-team__btn');
+
+function accordeon(btn) {
+  $(btn).on('click', function () {
+    var thisBtn = this;
+    $(btn).each(function (index, element) {
+      var accordItem = $(this).parent();
+      if (thisBtn == element) {
+        if (accordItem.hasClass('active')) {
+          accordItem.removeClass('active');
+        } else {
+          accordItem.addClass('active');
+        }
+      } else {
+        if (accordItem.hasClass('active')) {
+          accordItem.removeClass('active');
+        }
+      }
+    });
+  });
+}

@@ -143,6 +143,13 @@ button {
   -o-transition: all .3s ease;
   transition: all .3s ease; }
 
+button {
+  margin: 0;
+  padding: 0;
+  background: none;
+  position: relative;
+  border: none; }
+
 .btn {
   background: #e45028;
   font-size: 0.8125rem;
@@ -420,8 +427,134 @@ button {
   background-image: linear-gradient(to top, #f9b43b, #eb8c38 48%, #f9b43b 74%); }
 
 .section-team {
-  background-image: url("../images/background/bg-section-4.png");
-  background-size: cover; }
+  background: url("../images/background/bg-section-4.png") 50% no-repeat;
+  background-size: cover;
+  position: relative; }
+  .section-team .section__title {
+    margin-bottom: 12%; }
+
+.section-team__container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background: rgba(47, 50, 52, 0.93);
+  padding: 5% 2% 0 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.section-team__item {
+  margin-bottom: 2.5rem; }
+  .section-team__item:last-child {
+    margin-bottom: 0; }
+  .section-team__item.active .section-team__btn {
+    color: #f9b43b; }
+    .section-team__item.active .section-team__btn:before {
+      -webkit-transform: rotate(-180deg);
+          -ms-transform: rotate(-180deg);
+              transform: rotate(-180deg); }
+  .section-team__item.active .section-team__item-content {
+    height: 7.8125rem; }
+
+.section-team__btn {
+  color: #fff;
+  font-size: 0.875rem;
+  font-family: 'Gagalin', Helvetica, sans-serif;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 1.5625rem; }
+  .section-team__btn:before, .section-team__btn:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0rem;
+    top: 0.375rem;
+    width: 0;
+    height: 0; }
+  .section-team__btn:before {
+    border-top: 0.4375rem solid #f9b43b;
+    border-left: 0.3125rem solid transparent;
+    border-right: 0.3125rem solid transparent;
+    border-bottom: 0rem solid transparent;
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+  .section-team__btn:after {
+    display: none;
+    border-bottom: 0.4375rem solid #f9b43b;
+    border-left: 0.3125rem solid transparent;
+    border-right: 0.3125rem solid transparent;
+    border-top: 0rem solid transparent; }
+
+.section-team__item-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height .3s ease;
+  -o-transition: height .3s ease;
+  transition: height .3s ease; }
+
+.section-team__picture {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%; }
+
+.section-team__image {
+  width: 6.25rem;
+  height: 6.25rem;
+  border-radius: 50%; }
+
+.section-team__text {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  text-align: left; }
+
+.section-team__item-title {
+  font-family: 'Ubuntu';
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: #fff;
+  margin-bottom: 0.875rem; }
+
+.section-team__text-content {
+  font-family: 'Ubuntu';
+  font-weight: 300;
+  color: #fff;
+  font-size: 0.875rem; }
 
 .section-menu {
   background-image: url("../images/background/bg-section-7.png");
@@ -567,9 +700,9 @@ button {
   border: none;
   border-radius: 50px;
   background: #ffffff;
-  -webkit-transition: border .3s ease;
-  -o-transition: border .3s ease;
-  transition: border .3s ease; }
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease; }
 
 .pagepanel__button:hover::after {
   content: ' ';
