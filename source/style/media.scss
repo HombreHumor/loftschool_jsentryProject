@@ -135,3 +135,9 @@ html {
     width: auto;
   }
 }
+
+.pagepanel {
+  @include tablets {
+    display: none;
+  }
+}

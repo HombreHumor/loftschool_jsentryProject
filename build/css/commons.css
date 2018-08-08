@@ -536,3 +536,65 @@ button {
 .section-contacts {
   background-image: url("../images/background/bg-section-9.png");
   background-size: cover; }
+
+.pagepanel {
+  position: fixed;
+  top: 91px;
+  right: 50px; }
+
+.pagepanel__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.pagepanel__item {
+  margin-bottom: 15px; }
+
+.pagepanel__button {
+  position: relative;
+  text-decoration: none;
+  padding: 3px;
+  border: none;
+  border-radius: 50px;
+  background: #ffffff;
+  -webkit-transition: border .3s ease;
+  -o-transition: border .3s ease;
+  transition: border .3s ease; }
+
+.pagepanel__button:hover::after {
+  content: ' ';
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 8px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.pagepanel__button--active {
+  position: relative; }
+
+.pagepanel__button--active::after {
+  content: ' ';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 8px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }

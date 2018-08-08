@@ -112,3 +112,7 @@
 @media screen and (max-width: 480px) {
   .review__image {
     width: auto; } }
+
+@media screen and (max-width: 768px) {
+  .pagepanel {
+    display: none; } }
