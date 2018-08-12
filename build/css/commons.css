@@ -221,8 +221,7 @@ button:hover {
 
 .logo {
   display: inline-block;
-  position: relative;
-  z-index: 110; }
+  position: relative; }
   .logo svg {
     max-width: 95%; }
 
