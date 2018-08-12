@@ -1,3 +1,190 @@
 .section-burgers {
   background-image: linear-gradient(to top, #f9b43b, #eb8c38 48%, #f9b43b 74%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider-left {
+  display: flex;
+  flex-basis: rem(70px);
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.slider-left__btn {
+  width: rem(29px);
+  height: rem(14px);
+  transform: rotate(90deg);
+}
+
+.slider-left__btn:hover {
+  cursor: pointer;
+}
+
+.slider-left__btn-svg {
+  width: rem(29px);
+  height: rem(14px);
+}
+
+.slider-center {
+  flex: 1;
+  height: 70vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.burger-image {
+  position: relative;
+  width: 43%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.burger-image__picture {
+  width: 100%;
+}
+
+.burger-image__consist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90px;
+  height: 90px;
+  border-radius: 5px;
+  background-color: #f08c33;
+}
+
+.burger-image__consist-svg {
+  width: rem(46px);
+  height: rem(45px);
+  margin-bottom: 9px;
+}
+
+.burger-image__consist-text {
+  @include gagalin;
+  font-size: rem(14px);
+  color: #ffffff;
+}
+
+.burger-image__kkal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  opacity: .5;
+}
+
+.burger-image__kkal-icon {
+  position: relative;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.burger-image__kkal-icon-svg {
+  width: 60px;
+  height: 60px;
+}
+
+.burger-image__kkal-icon-number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+  @include gagalin;
+  font-size: rem(20px);
+  color: #ffffff;
+}
+
+.burger-image__kkal-text {
+  @include gagalin;
+  font-size: rem(14px);
+  color: #ffffff;
+}
+
+.burger-info {
+  position: relative;
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.burger-info__title {
+  line-height: 0.89;
+  margin-bottom: rem(50px);
+}
+
+.burger-info__text {
+  font-family: Ubuntu;
+  font-size: rem(14px);
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.71;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.burger-info__order {
+  display: flex;
+  flex-direction: row;
+}
+
+.burger-info__order-price {
+  @include gagalin;
+  font-size: rem(72px);
+  color: #e35028;
+  align-self: flex-start;
+  margin-right: rem(10px);
+}
+
+.burger-info__order-price-text {
+  @include gagalin;
+  font-size: rem(30px);
+  color: #e35028;
+  align-self: center;
+  margin-top: rem(25px);
+  margin-right: rem(29px);
+}
+
+.burger-info__order-button {
+  width: 98px;
+  height: 35px;
+  align-self: center;
+  margin-top: rem(35px);
+}
+
+.slider-right {
+  display: flex;
+  flex-basis: rem(70px);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.slider-right__btn {
+  width: rem(29px);
+  height: rem(14px);
+  transform: rotate(-90deg);
+}
+
+.slider-right__btn:hover {
+  cursor: pointer;
+}
+
+.slider-right__btn-svg {
+  width: rem(29px);
+  height: rem(14px);
 }

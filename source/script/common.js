@@ -1,6 +1,3 @@
-accordeon('.section-team__btn');
-accordeon('.section-menu__button');
-
 function accordeon(btn) {
   $(btn).on('click', function () {
     let thisBtn = this;
@@ -21,3 +18,15 @@ function accordeon(btn) {
   });
 }
 
+function mobilemenu(btn, closeBtn, menu) {
+  $(btn).on('click', function () {
+    $(menu).fadeIn(300);
+  });
+  $(closeBtn).on('click', function () {
+    $(menu).fadeOut(300);
+  });
+}
+
+accordeon('.section-team__btn');
+accordeon('.section-menu__button');
+mobilemenu('.hamburger-button', '.mobile__close', '.mobile');

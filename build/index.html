@@ -18,6 +18,22 @@
   </head>
   <body class="home">
     <div class="wrapper">
+      <div class="mobile">
+        <div class="mobile__top">
+          <div class="logo"><img class="logo__icon" src="./images/icon/logo.svg" alt="Mr. Buurger"></div>
+          <button class="mobile__close" type="button"></button>
+        </div>
+        <nav class="mobile__mobile-nav">
+          <ul class="mobile-nav__list">
+            <li class="mobile-nav__item"><a class="mobile-nav__link" href="">о нас</a></li>
+            <li class="mobile-nav__item"><a class="mobile-nav__link" href="">бургеры</a></li>
+            <li class="mobile-nav__item"><a class="mobile-nav__link" href="">команда</a></li>
+            <li class="mobile-nav__item"><a class="mobile-nav__link" href="">меню</a></li>
+            <li class="mobile-nav__item"><a class="mobile-nav__link" href="">отзывы</a></li>
+            <li class="mobile-nav__item"><a class="mobile-nav__link" href="">контакты</a></li>
+          </ul>
+        </nav>
+      </div>
       <main class="main">
         <section class="section main__section-welcome section-welcome">
           <div class="container">
@@ -38,8 +54,11 @@
                     </ul>
                   </nav>
                 </div>
-                <div class="header__buttons"><a class="header__order-button btn" href="">Заказать</a><a class="header__hamburger-button hamburger-button" href="">
-                    <div class="hamburger-button__bars"></div></a></div>
+                <div class="header__buttons"><a class="header__order-button btn" href="">Заказать</a>
+                  <button class="header__hamburger-button hamburger-button" type="button">
+                    <div class="hamburger-button__bars"></div>
+                  </button>
+                </div>
               </div>
             </header>
             <div class="section-welcome__container">
@@ -99,14 +118,52 @@
             </ul>
           </div>
         </section>
-        <section class="section main__section-burgers section-burgers"></section>
+        <section class="section main__section-burgers section-burgers">
+          <div class="section-burgers__slider-left slider-left">
+            <button class="slider-left__btn" type="button">
+              <svg class="slider-left__btn-svg">
+                <use xlink:href="./images/sprite/icons.svg#arrow-scroll" x="0" y="0"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="section-burgers__slider-center slider-center">
+            <figure class="slider-center__burger-image burger-image"><img class="burger-image__picture" src="./images/content/slider/black-burger.png" alt="Dark Beef Burger">
+              <button class="burger-image__consist" type="button">
+                <svg class="burger-image__consist-svg">
+                  <use xlink:href="./images/sprite/icons.svg#burger" x="0" y="-83" fill="#ffffff"></use>
+                </svg><span class="burger-image__consist-text">Состав</span>
+              </button>
+              <button class="burger-image__kkal" type="button">
+                <div class="burger-image__kkal-icon">
+                  <svg class="burger-image__kkal-icon-svg">
+                    <use xlink:href="./images/sprite/icons.svg#kkal" x="0" y="-520" fill="#ffffff"></use>
+                  </svg><b class="burger-image__kkal-icon-number">1200</b>
+                </div><span class="burger-image__kkal-text">ккал</span>
+              </button>
+            </figure>
+            <article class="slider-center__buurger-info burger-info">
+              <h2 class="burger-info__title section__title section__title_white">Dark Beef Burger</h2>
+              <p class="burger-info__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+              <div class="burger-info__order"><b class="burger-info__order-price">500</b><span class="burger-info__order-price-text">рублей</span>
+                <button class="burger-info__order-button btn">Заказать</button>
+              </div>
+            </article>
+          </div>
+          <div class="section-burgers__slider-right slider-right">
+            <button class="slider-right__btn" type="button">
+              <svg class="slider-right__btn-svg">
+                <use xlink:href="./images/sprite/icons.svg#arrow-scroll" x="0" y="0"></use>
+              </svg>
+            </button>
+          </div>
+        </section>
         <section class="section main__section-team section-team">
           <div class="section-team__container">
             <div class="section-team__content">
               <h2 class="section__title">Команда</h2>
               <ul class="section-team__list">
                 <li class="section-team__item">
-                  <button class="section-team__btn">Дэниэл Рэдклифф</button>
+                  <button class="section-team__btn" type="button">Дэниэл Рэдклифф</button>
                   <div class="section-team__item-content">
                     <figure class="section-team__picture"><img class="section-team__image" src="./images/content/accordeon/teammate.jpg" alt="Дэниэл Рэдклифф"></figure>
                     <article class="section-team__text">
@@ -116,7 +173,7 @@
                   </div>
                 </li>
                 <li class="section-team__item">
-                  <button class="section-team__btn">Ричард Джеймс</button>
+                  <button class="section-team__btn" type="button">Ричард Джеймс</button>
                   <div class="section-team__item-content">
                     <figure class="section-team__picture"><img class="section-team__image" src="./images/content/accordeon/teammate.jpg" alt="Дэниэл Рэдклифф"></figure>
                     <article class="section-team__text">
@@ -126,7 +183,7 @@
                   </div>
                 </li>
                 <li class="section-team__item">
-                  <button class="section-team__btn">Джейк Финн</button>
+                  <button class="section-team__btn" type="button">Джейк Финн</button>
                   <div class="section-team__item-content">
                     <figure class="section-team__picture"><img class="section-team__image" src="./images/content/accordeon/teammate.jpg" alt="Дэниэл Рэдклифф"></figure>
                     <article class="section-team__text">
@@ -136,7 +193,7 @@
                   </div>
                 </li>
                 <li class="section-team__item">
-                  <button class="section-team__btn">Николай Иванов</button>
+                  <button class="section-team__btn" type="button">Николай Иванов</button>
                   <div class="section-team__item-content">
                     <figure class="section-team__picture"><img class="section-team__image" src="./images/content/accordeon/teammate.jpg" alt="Дэниэл Рэдклифф"></figure>
                     <article class="section-team__text">
@@ -153,7 +210,7 @@
           <h2 class="section__title section__title_white section-menu__title">Меню</h2>
           <ul class="section-menu__list">
             <li class="section-menu__item">
-              <button class="section-menu__button" style="background-image: url(./images/background/bg-menu-1.png);">
+              <button class="section-menu__button" style="background-image: url(./images/background/bg-menu-1.png);" type="button">
                 <h3 class="section-menu__item-title">Для мясоедов</h3>
               </button>
               <div class="section-menu__item-content">
@@ -161,7 +218,7 @@
               </div>
             </li>
             <li class="section-menu__item">
-              <button class="section-menu__button" style="background-image: url(./images/background/bg-menu-2.png);">
+              <button class="section-menu__button" style="background-image: url(./images/background/bg-menu-2.png);" type="button">
                 <h3 class="section-menu__item-title">Вегетарианское</h3>
               </button>
               <div class="section-menu__item-content">
@@ -169,7 +226,7 @@
               </div>
             </li>
             <li class="section-menu__item">
-              <button class="section-menu__button" style="background-image: url(./images/background/bg-menu-3.png);">
+              <button class="section-menu__button" style="background-image: url(./images/background/bg-menu-3.png);" type="button">
                 <h3 class="section-menu__item-title">Диетическое</h3>
               </button>
               <div class="section-menu__item-content">
@@ -187,7 +244,7 @@
                   <h2 class="review__title">Александра Горнова</h2>
                   <p class="review__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                   <div class="review__button-wrap">
-                    <button class="review__view" href="#full">Подробнее</button>
+                    <button class="review__view" type="button">Подробнее</button>
                   </div>
                 </div>
               </article>
@@ -199,7 +256,7 @@
                   <h2 class="review__title">Константин Спилберг</h2>
                   <p class="review__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                   <div class="review__button-wrap">
-                    <button class="review__view" href="#full">Подробнее</button>
+                    <button class="review__view" type="button">Подробнее</button>
                   </div>
                 </div>
               </article>
@@ -211,7 +268,7 @@
                   <h2 class="review__title">Кристина Павлова</h2>
                   <p class="review__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                   <div class="review__button-wrap">
-                    <button class="review__view" href="#full">Подробнее</button>
+                    <button class="review__view" type="button">Подробнее</button>
                   </div>
                 </div>
               </article>
@@ -223,7 +280,7 @@
                   <h2 class="review__title">Иван Нарзов</h2>
                   <p class="review__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                   <div class="review__button-wrap">
-                    <button class="review__view" href="#full">Подробнее</button>
+                    <button class="review__view" type="button">Подробнее</button>
                   </div>
                 </div>
               </article>
@@ -235,7 +292,7 @@
                   <h2 class="review__title">Майк Анкридж</h2>
                   <p class="review__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                   <div class="review__button-wrap">
-                    <button class="review__view" href="#full">Подробнее</button>
+                    <button class="review__view" type="button">Подробнее</button>
                   </div>
                 </div>
               </article>
@@ -247,7 +304,7 @@
                   <h2 class="review__title">Ксения Аврелина</h2>
                   <p class="review__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                   <div class="review__button-wrap">
-                    <button class="review__view" href="#full">Подробнее</button>
+                    <button class="review__view" type="button">Подробнее</button>
                   </div>
                 </div>
               </article>
@@ -259,7 +316,7 @@
                   <h2 class="review__title">Стивен Пилберг</h2>
                   <p class="review__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                   <div class="review__button-wrap">
-                    <button class="review__view" href="#full">Подробнее</button>
+                    <button class="review__view" type="button">Подробнее</button>
                   </div>
                 </div>
               </article>
@@ -271,7 +328,7 @@
                   <h2 class="review__title">Джаред Винтер</h2>
                   <p class="review__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
                   <div class="review__button-wrap">
-                    <button class="review__view" href="#full">Подробнее</button>
+                    <button class="review__view" type="button">Подробнее</button>
                   </div>
                 </div>
               </article>
@@ -360,7 +417,10 @@
           <footer class="footer">
             <div class="container footer__container">
               <div class="footer__column">
-                <address class="footer__address">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</address><a class="footer__phone" href="tel:+78123771377">+7 (812) 377-13-77</a>
+                <address class="footer__address">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</address><a class="footer__phone" href="tel:+78123771377"> 
+                  <svg class="footer__phone-svg">
+                    <use xlink:href="./images/sprite/icons.svg#phone" x="0" y="-1019"></use>
+                  </svg><span>+7 (812) 377-13-77</span></a>
               </div>
               <div class="footer__column footer__column--right">
                 <ul class="footer__socials socials">

@@ -5,6 +5,7 @@ block variables
  - var bodyClass = 'home'
 block content
   .wrapper
+    include ../layout/mobile-menu.pug
     main.main
       section.section.main__section-welcome.section-welcome
         .container
@@ -13,6 +14,7 @@ block content
         .container
           include ../sections/_section-we.pug
       section.section.main__section-burgers.section-burgers
+        include ../sections/_section-burgers.pug
       section.section.main__section-team.section-team
         include ../sections/_section-team.pug
       section.section.main__section-menu.section-menu

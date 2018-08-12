@@ -20,6 +20,8 @@
 
 .section-menu__item {
   height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
   &.active {
     .section-menu__item-title {
       color: $yellow;
@@ -38,6 +40,7 @@
 
 .section-menu__button {
   width: rem(80px);
+  min-width: 80px;
   display: block;
   height: 100%;
   float: left;

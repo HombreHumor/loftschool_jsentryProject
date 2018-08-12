@@ -229,3 +229,48 @@ html {
     margin-left: 0;
   }
 }
+
+.slider-center {
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+  }
+}
+
+.burger-image {
+  @include tablets {
+    width: 100%;
+    height: 50%;
+  }
+}
+
+.burger-image__kkal {
+  @include tablets {
+    top: 0;
+    right: 0;
+    left: auto;
+    bottom: auto;
+  }
+}
+
+.burger-info {
+  @include tablets {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.section-form__row {
+  @include tablets {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.active {
+  @include tablets {
+    width: calc(100vw - 240px);
+  }
+}
