@@ -1,27 +1,32 @@
+- var burgetlist=[{image:"./images/content/slider/black-burger.png",name:"Dark Beef Burger",desc:"Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.",price:"500",kkal:"1200"},{image:"./images/content/slider/burger_sandwich_PNG4124.png",name:"Sandwich Burger",desc:"Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.",price:"700",kkal:"2200"},{image:"./images/content/slider/Chiken burger.png",name:"Chiken burger",desc:"Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.",price:"300",kkal:"1100"},{image:"./images/content/slider/NYC-Diner-Bacon-Cheeseburger.png",name:"Bacon Cheeseburger",desc:"Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.",price:"900",kkal:"900"},{image:"./images/content/slider/Spicy_Shrimp_Burger.png",name:"Spicy Shrimp Burger",desc:"Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.",price:"1200",kkal:"1300"}];
 .section-burgers__slider-left.slider-left
   button.slider-left__btn(type="button")
     svg.slider-left__btn-svg
       use(xlink:href="./images/sprite/icons.svg#arrow-scroll", x=0, y=0)
 .section-burgers__slider-center.slider-center
-  figure.slider-center__burger-image.burger-image
-    img.burger-image__picture(src="./images/content/slider/black-burger.png", alt="Dark Beef Burger")
-    button.burger-image__consist(type="button")
-      svg.burger-image__consist-svg
-        use(xlink:href="./images/sprite/icons.svg#burger", x=0, y=-83, fill="#ffffff")
-      span.burger-image__consist-text Состав
-    button.burger-image__kkal(type="button")
-      .burger-image__kkal-icon
-        svg.burger-image__kkal-icon-svg
-          use(xlink:href="./images/sprite/icons.svg#kkal", x=0, y=-520, fill="#ffffff")
-        b.burger-image__kkal-icon-number 1200
-      span.burger-image__kkal-text ккал
-  article.slider-center__buurger-info.burger-info
-    h2.burger-info__title.section__title.section__title_white Dark Beef Burger
-    p.burger-info__text Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
-    .burger-info__order
-      b.burger-info__order-price 500
-      span.burger-info__order-price-text рублей
-      a.burger-info__order-button.btn(href="#") Заказать
+  ul.slider-center__list.owl-carousel
+    each burger in burgetlist
+      li.slider-center__item
+        .slider-center__item-container
+          figure.slider-center__burger-image.burger-image
+            img.burger-image__picture(src=burger.image, alt=burger.name)
+            button.burger-image__consist(type="button")
+              svg.burger-image__consist-svg
+                use(xlink:href="./images/sprite/icons.svg#burger", x=0, y=-83, fill="#ffffff")
+              span.burger-image__consist-text Состав
+            button.burger-image__kkal(type="button")
+              .burger-image__kkal-icon
+                svg.burger-image__kkal-icon-svg
+                  use(xlink:href="./images/sprite/icons.svg#kkal", x=0, y=-520, fill="#ffffff")
+                b.burger-image__kkal-icon-number #{burger.kkal}
+              span.burger-image__kkal-text ккал
+          article.slider-center__buurger-info.burger-info
+            h2.burger-info__title.section__title.section__title_white #{burger.name}
+            p.burger-info__text #{burger.desc}
+            .burger-info__order
+              b.burger-info__order-price #{burger.price}
+              span.burger-info__order-price-text рублей
+              a.burger-info__order-button.btn(href="#") Заказать
 .section-burgers__slider-right.slider-right
   button.slider-right__btn(type="button")
     svg.slider-right__btn-svg

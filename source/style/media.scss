@@ -272,11 +272,13 @@ html {
   }
 }
 
-.slider-center {
+.slider-center,
+.slider-center__item,
+.slider-center__item-container {
   @include tablets {
     flex-direction: column;
     align-items: center;
-    height: 90vh;
+    min-height: 90vh;
   }
 }
 
