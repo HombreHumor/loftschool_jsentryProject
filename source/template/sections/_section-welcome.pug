@@ -10,7 +10,7 @@ header.section-welcome__header.header
             li.navigation__item
               a.navigation__link(href="#", data-scroll-to=item.numb) #{item.desc}
     .header__buttons
-      a.header__order-button.btn(href="#") Заказать
+      a.header__order-button.btn(href="#", data-scroll-to=7) Заказать
       button.header__hamburger-button.hamburger-button(type='button')
         .hamburger-button__bars
 .section-welcome__container
@@ -20,6 +20,6 @@ header.section-welcome__header.header
     h1.section-welcome__right
       span.section__title Мы делаем
       b.section-welcome__description Натуральные бургеры
-a.section__down-btn.down-btn(href="#")
+a.section__down-btn.down-btn(href="#", data-scroll-to=1)
   svg.down-btn__icon
     use(xlink:href="./images/sprite/icons.svg#arrow-scroll", x=0, y=0)
