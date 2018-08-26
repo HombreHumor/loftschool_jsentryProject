@@ -2,7 +2,7 @@
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Mr.Burger - мы делаем натуральные бургеры</title>
     <meta content="" name="author">
     <meta content="" name="description">
     <meta content="" name="keywords">
@@ -25,12 +25,13 @@
         </div>
         <nav class="mobile__mobile-nav">
           <ul class="mobile-nav__list">
-            <li class="mobile-nav__item"><a class="mobile-nav__link" href="">о нас</a></li>
-            <li class="mobile-nav__item"><a class="mobile-nav__link" href="">бургеры</a></li>
-            <li class="mobile-nav__item"><a class="mobile-nav__link" href="">команда</a></li>
-            <li class="mobile-nav__item"><a class="mobile-nav__link" href="">меню</a></li>
-            <li class="mobile-nav__item"><a class="mobile-nav__link" href="">отзывы</a></li>
-            <li class="mobile-nav__item"><a class="mobile-nav__link" href="">контакты</a></li>
+            <li class="mobile-nav__item"><a class="mobile-nav__link" href="#" data-scroll-to="1">о нас</a></li>
+            <li class="mobile-nav__item"><a class="mobile-nav__link" href="#" data-scroll-to="2">бургеры</a></li>
+            <li class="mobile-nav__item"><a class="mobile-nav__link" href="#" data-scroll-to="3">команда</a></li>
+            <li class="mobile-nav__item"><a class="mobile-nav__link" href="#" data-scroll-to="4">меню</a></li>
+            <li class="mobile-nav__item"><a class="mobile-nav__link" href="#" data-scroll-to="5">отзывы</a></li>
+            <li class="mobile-nav__item"><a class="mobile-nav__link" href="#" data-scroll-to="6">как мы работаем</a></li>
+            <li class="mobile-nav__item"><a class="mobile-nav__link" href="#" data-scroll-to="8">контакты</a></li>
           </ul>
         </nav>
       </div>
@@ -45,12 +46,13 @@
                 <div class="header__menu">
                   <nav class="navigation">
                     <ul class="navigation__list">
-                      <li class="navigation__item"><a class="navigation__link" href="#">о нас</a></li>
-                      <li class="navigation__item"><a class="navigation__link" href="#">бургеры</a></li>
-                      <li class="navigation__item"><a class="navigation__link" href="#">команда</a></li>
-                      <li class="navigation__item"><a class="navigation__link" href="#">меню</a></li>
-                      <li class="navigation__item"><a class="navigation__link" href="#">отзывы</a></li>
-                      <li class="navigation__item"><a class="navigation__link" href="#">контакты</a></li>
+                      <li class="navigation__item"><a class="navigation__link" href="#" data-scroll-to="1">о нас</a></li>
+                      <li class="navigation__item"><a class="navigation__link" href="#" data-scroll-to="2">бургеры</a></li>
+                      <li class="navigation__item"><a class="navigation__link" href="#" data-scroll-to="3">команда</a></li>
+                      <li class="navigation__item"><a class="navigation__link" href="#" data-scroll-to="4">меню</a></li>
+                      <li class="navigation__item"><a class="navigation__link" href="#" data-scroll-to="5">отзывы</a></li>
+                      <li class="navigation__item"><a class="navigation__link" href="#" data-scroll-to="6">как мы работаем</a></li>
+                      <li class="navigation__item"><a class="navigation__link" href="#" data-scroll-to="8">контакты</a></li>
                     </ul>
                   </nav>
                 </div>
@@ -430,18 +432,28 @@
               </article>
             </li>
           </ul>
-          <div class="overlay">
-            <div class="modal">
-              <div class="modal__row"> <b class="modal__title">TEST</b>
-                <button class="modal__close"></button>
+        </section>
+        <section class="section main__section-howwork section-howwork">
+          <div class="container section-howwork__container">
+            <h2 class="section__title section__title_black section__title_center">Как мы работаем</h2>
+            <div class="section-howwork__player player">
+              <div class="player__wrapper">
+                <div id="yt-player"></div>
+                <div class="player__splash"></div>
               </div>
-              <div class="modal__row">
-                <p class="modal__text">TEST</p>
+              <div class="player__controls">
+                <button class="player__start" type="button"></button>
+                <div class="player__playback">
+                  <button class="player__playback-button" type="button"></button>
+                </div>
+                <div class="player__volume-icon"></div>
+                <div class="player__volume-bar">
+                  <button class="player__volume-button" type="button"></button>
+                </div>
               </div>
             </div>
           </div>
         </section>
-        <section class="section main__section-howwork section-howwork"></section>
         <section class="section main__section-form section-form">
           <div class="container section-form__container">
             <h2 class="section__title section__title--form">Закажите доставку</h2>
@@ -555,33 +567,58 @@
       <nav class="pagepanel">
         <ul class="pagepanel__list">
           <li class="pagepanel__item">
-            <button class="pagepanel__button pagepanel__button--active"></button>
+            <button class="pagepanel__button pagepanel__button--active" data-scroll-to="0"></button>
           </li>
           <li class="pagepanel__item">
-            <button class="pagepanel__button"></button>
+            <button class="pagepanel__button" data-scroll-to="1"></button>
           </li>
           <li class="pagepanel__item">
-            <button class="pagepanel__button"></button>
+            <button class="pagepanel__button" data-scroll-to="2"></button>
           </li>
           <li class="pagepanel__item">
-            <button class="pagepanel__button"></button>
+            <button class="pagepanel__button" data-scroll-to="3"></button>
           </li>
           <li class="pagepanel__item">
-            <button class="pagepanel__button"></button>
+            <button class="pagepanel__button" data-scroll-to="4"></button>
           </li>
           <li class="pagepanel__item">
-            <button class="pagepanel__button"></button>
+            <button class="pagepanel__button" data-scroll-to="5"></button>
           </li>
           <li class="pagepanel__item">
-            <button class="pagepanel__button"></button>
+            <button class="pagepanel__button" data-scroll-to="6"></button>
           </li>
           <li class="pagepanel__item">
-            <button class="pagepanel__button"></button>
+            <button class="pagepanel__button" data-scroll-to="7"></button>
+          </li>
+          <li class="pagepanel__item">
+            <button class="pagepanel__button" data-scroll-to="8"></button>
           </li>
         </ul>
       </nav>
     </div>
+    <div class="overlay overlay--reviews">
+      <div class="modal modal--reviews">
+        <div class="modal__row"> <b class="modal__title"> </b>
+          <button class="modal__close"></button>
+        </div>
+        <div class="modal__row">
+          <p class="modal__text"> </p>
+        </div>
+      </div>
+    </div>
+    <div class="overlay overlay--form">
+      <div class="modal modal--form">
+        <div class="modal__row modal__row--form"> <b class="modal__text modal__text--formresp"> </b></div>
+        <div class="modal__row modal__row--form">
+          <button class="modal__okbtn btn">Закрыть</button>
+        </div>
+      </div>
+    </div>
     <script src="./js/vendor.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js" defer></script>
+    <script src="https://api-maps.yandex.ru/2.1.17/?load=package.standard&amp;lang=ru-RU" defer></script>
+    <script src="https://www.youtube.com/iframe_api" defer></script>
     <script src="./js/common.js" defer></script>
   </body>
 </html>

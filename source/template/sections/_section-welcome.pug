@@ -6,18 +6,9 @@ header.section-welcome__header.header
     .header__menu
       nav.navigation
         ul.navigation__list
-          li.navigation__item
-            a.navigation__link(href="#") о нас
-          li.navigation__item
-            a.navigation__link(href="#") бургеры
-          li.navigation__item
-            a.navigation__link(href="#") команда
-          li.navigation__item
-            a.navigation__link(href="#") меню
-          li.navigation__item
-            a.navigation__link(href="#") отзывы
-          li.navigation__item
-            a.navigation__link(href="#") контакты
+          each item in [{numb: 1, desc: "о нас"},{numb: 2, desc: "бургеры"},{numb: 3, desc: "команда"},{numb: 4, desc: "меню"},{numb: 5, desc: "отзывы"},{numb: 6, desc: "как мы работаем"},{numb: 8, desc: "контакты"}]
+            li.navigation__item
+              a.navigation__link(href="#", data-scroll-to=item.numb) #{item.desc}
     .header__buttons
       a.header__order-button.btn(href="#") Заказать
       button.header__hamburger-button.hamburger-button(type='button')

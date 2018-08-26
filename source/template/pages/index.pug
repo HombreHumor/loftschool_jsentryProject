@@ -1,7 +1,7 @@
 extends ../_template.pug
 
 block variables
- - var title = ''
+ - var title = 'Mr.Burger - мы делаем натуральные бургеры'
  - var bodyClass = 'home'
 block content
   .wrapper
@@ -22,6 +22,8 @@ block content
       section.section.main__section-reviews.section-reviews
         include ../sections/_section-reviews.pug
       section.section.main__section-howwork.section-howwork
+        .container.section-howwork__container
+          include ../sections/_section-howwork.pug
       section.section.main__section-form.section-form
         .container.section-form__container
           include ../sections/_section-form.pug
@@ -30,8 +32,8 @@ block content
     nav.pagepanel
       ul.pagepanel__list
         li.pagepanel__item
-          button.pagepanel__button.pagepanel__button--active
-        each item in [1,2,3,4,5,6,7]
+          button.pagepanel__button.pagepanel__button--active(data-scroll-to=0)
+        each item in [1,2,3,4,5,6,7,8]
           li.pagepanel__item
-            button.pagepanel__button
+            button.pagepanel__button(data-scroll-to=item)
             
