@@ -139,9 +139,9 @@ const performTransition = sectionEq => {
 
   sections
     .eq(sectionEq)
-    .addClass("active")
+    .addClass("active-js")
     .siblings()
-    .removeClass("active");
+    .removeClass("active-js");
 
   display.css({
     transform: `translate(0, ${position})`,
@@ -155,7 +155,7 @@ const performTransition = sectionEq => {
 };
 
 const scrollToSection = direction => {
-  const activeSection = sections.filter(".active");
+  const activeSection = sections.filter(".active-js");
   const nextSection = activeSection.next();
   const prevSection = activeSection.prev();
 
@@ -257,10 +257,18 @@ function init() {
 
 let player;
 
+let width = "660";
+
+if ($('.section').width() < 768) {
+  width = "500";
+} 
+if ($('.section').width() < 480) {
+  width = "300";
+} 
+
 function onYouTubeIframeAPIReady() {
   player = new YT.Player("yt-player", {
-    width: "660",
-    height: "405",
+    width: width,
     videoId: "iM_KMYulI_s",
     playerVars: {
       controls: 0,

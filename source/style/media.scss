@@ -3,7 +3,6 @@ $desktop: 1200px;
 $laptop: 992px;
 $tablets: 768px;
 $phones: 480px;
-
 @mixin tablets {
   @media screen and (max-width: $tablets) {
     @content;
@@ -40,6 +39,12 @@ html {
   }
 }
 
+.section-welcome__left {
+  @include tablets() {
+    margin: 0;
+  }
+}
+
 .section-welcome__left,
 .section-welcome__right {
   @include tablets() {
@@ -69,6 +74,20 @@ html {
 .section-we__item {
   @include phones {
     flex-direction: row;
+    align-items: center;
+  }
+}
+
+.section-we__text p {
+  @include phones {
+    line-height: 1.45;
+  }
+}
+
+.section-we__icon {
+  @include phones {
+    margin: 0;
+    margin-right: 10px;
   }
 }
 
@@ -111,7 +130,6 @@ html {
     top: 50%;
     left: 50%;
   }
-
   .review__image {
     width: auto;
     max-width: none;
@@ -130,7 +148,6 @@ html {
     width: 100%;
     height: auto;
   }
-
   @include phones {
     width: auto;
   }
@@ -225,6 +242,10 @@ html {
 }
 
 .section-form__container {
+  @include tablets {
+    justify-content: center;
+    align-items: center;
+  }
   @include phones {
     max-width: 90%;
     max-height: 95%;
@@ -242,9 +263,29 @@ html {
 }
 
 .section__title {
-  @include phones {
+  @include tablets {
     max-width: 90%;
     max-height: 95%;
+  }
+  @include phones {
+    max-width: 70%;
+    max-height: 75%;
+    font-size: 3rem;
+  }
+}
+
+.section-welcome__description {
+  @include phones {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.section-we .section__title {
+  @include tablets {
+    margin-bottom: 10px;
+    max-width: 100%;
   }
 }
 
@@ -278,13 +319,13 @@ html {
   @include tablets {
     flex-direction: column;
     align-items: center;
-    min-height: 90vh;
+    min-height: 95vh;
   }
 }
 
 .burger-image {
   @include tablets {
-    width: 100%;
+    width: 70%;
     height: 50%;
   }
 }
@@ -300,8 +341,38 @@ html {
 
 .burger-info {
   @include tablets {
+    width: 80%;
     align-items: center;
     text-align: center;
+  }
+}
+
+.burger-info__order {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.burger-info__title {
+  @include tablets {
+    margin-bottom: 10px;
+  }
+}
+
+.burger-info__text {
+  @include tablets {
+    margin-bottom: 10px;
+  }
+}
+
+.burger-info__order-button {
+  @include tablets {
+    margin: 0;
+  }
+}
+
+.burger-info__order-price {
+  @include tablets {
+    font-size: 3.5rem;
   }
 }
 
@@ -316,5 +387,76 @@ html {
 .active {
   @include tablets {
     width: calc(100vw - 240px);
+  }
+  @include phones {
+    width: calc(100vw - 110px);
+  }
+}
+
+.section-menu__button {
+  @include phones {
+    width: auto;
+    min-width: 50px;
+  }
+}
+
+.section-menu__item-title {
+  @include phones {
+    font-size: 2rem;
+  }
+}
+
+.section-menu__text {
+  @include phones {
+    font-size: 0.7rem;
+    line-height: 1.45;
+  }
+}
+
+.review__hover {
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.player__playback {
+  @include tablets {
+    width: 286px; 
+  }
+  @include phones {
+    width: 86px;
+  }
+}
+
+.player__volume-icon {
+  @include tablets {
+    left: 380px;
+  }
+  @include phones {
+    left: 180px;
+  }
+}
+
+.player__volume-bar {
+  @include tablets {
+    left: 420px;
+  }
+  @include phones {
+    left: 220px;
+  }
+}
+
+.section-form__radio:not(:last-child) {
+  @include phones {
+    margin-right: 10px;
+  }
+}
+
+.section-form__radio:last-child {
+  @include phones {
+    margin-right: 0;
   }
 }

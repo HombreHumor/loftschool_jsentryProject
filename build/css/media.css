@@ -23,6 +23,10 @@
     padding: 0 20%; } }
 
 @media screen and (max-width: 768px) {
+  .section-welcome__left {
+    margin: 0; } }
+
+@media screen and (max-width: 768px) {
   .section-welcome__left,
   .section-welcome__right {
     float: none;
@@ -50,7 +54,19 @@
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row; } }
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; } }
+
+@media screen and (max-width: 480px) {
+  .section-we__text p {
+    line-height: 1.45; } }
+
+@media screen and (max-width: 480px) {
+  .section-we__icon {
+    margin: 0;
+    margin-right: 10px; } }
 
 @media screen and (max-width: 768px) {
   .section-reviews__item {
@@ -208,6 +224,15 @@
         -ms-flex-pack: center;
             justify-content: center; } }
 
+@media screen and (max-width: 768px) {
+  .section-form__container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; } }
+
 @media screen and (max-width: 480px) {
   .section-form__container {
     max-width: 90%;
@@ -230,10 +255,27 @@
   .section {
     min-width: 320px; } }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .section__title {
     max-width: 90%;
     max-height: 95%; } }
+
+@media screen and (max-width: 480px) {
+  .section__title {
+    max-width: 70%;
+    max-height: 75%;
+    font-size: 3rem; } }
+
+@media screen and (max-width: 480px) {
+  .section-welcome__description {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0; } }
+
+@media screen and (max-width: 768px) {
+  .section-we .section__title {
+    margin-bottom: 10px;
+    max-width: 100%; } }
 
 @media screen and (max-width: 480px) {
   .section__title--form {
@@ -269,11 +311,11 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    min-height: 90vh; } }
+    min-height: 95vh; } }
 
 @media screen and (max-width: 768px) {
   .burger-image {
-    width: 100%;
+    width: 70%;
     height: 50%; } }
 
 @media screen and (max-width: 768px) {
@@ -285,10 +327,34 @@
 
 @media screen and (max-width: 768px) {
   .burger-info {
+    width: 80%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     text-align: center; } }
+
+.burger-info__order {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+@media screen and (max-width: 768px) {
+  .burger-info__title {
+    margin-bottom: 10px; } }
+
+@media screen and (max-width: 768px) {
+  .burger-info__text {
+    margin-bottom: 10px; } }
+
+@media screen and (max-width: 768px) {
+  .burger-info__order-button {
+    margin: 0; } }
+
+@media screen and (max-width: 768px) {
+  .burger-info__order-price {
+    font-size: 3.5rem; } }
 
 @media screen and (max-width: 768px) {
   .section-form__row {
@@ -303,3 +369,69 @@
 @media screen and (max-width: 768px) {
   .active {
     width: calc(100vw - 240px); } }
+
+@media screen and (max-width: 480px) {
+  .active {
+    width: calc(100vw - 110px); } }
+
+@media screen and (max-width: 480px) {
+  .section-menu__button {
+    width: auto;
+    min-width: 50px; } }
+
+@media screen and (max-width: 480px) {
+  .section-menu__item-title {
+    font-size: 2rem; } }
+
+@media screen and (max-width: 480px) {
+  .section-menu__text {
+    font-size: 0.7rem;
+    line-height: 1.45; } }
+
+@media screen and (max-width: 768px) {
+  .review__hover {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; } }
+
+@media screen and (max-width: 768px) {
+  .player__playback {
+    width: 286px; } }
+
+@media screen and (max-width: 480px) {
+  .player__playback {
+    width: 86px; } }
+
+@media screen and (max-width: 768px) {
+  .player__volume-icon {
+    left: 380px; } }
+
+@media screen and (max-width: 480px) {
+  .player__volume-icon {
+    left: 180px; } }
+
+@media screen and (max-width: 768px) {
+  .player__volume-bar {
+    left: 420px; } }
+
+@media screen and (max-width: 480px) {
+  .player__volume-bar {
+    left: 220px; } }
+
+@media screen and (max-width: 480px) {
+  .section-form__radio:not(:last-child) {
+    margin-right: 10px; } }
+
+@media screen and (max-width: 480px) {
+  .section-form__radio:last-child {
+    margin-right: 0; } }

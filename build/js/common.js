@@ -139,7 +139,7 @@ var performTransition = function performTransition(sectionEq) {
 
   inScroll = true;
 
-  sections.eq(sectionEq).addClass("active").siblings().removeClass("active");
+  sections.eq(sectionEq).addClass("active-js").siblings().removeClass("active-js");
 
   display.css({
     transform: 'translate(0, ' + position + ')',
@@ -153,7 +153,7 @@ var performTransition = function performTransition(sectionEq) {
 };
 
 var scrollToSection = function scrollToSection(direction) {
-  var activeSection = sections.filter(".active");
+  var activeSection = sections.filter(".active-js");
   var nextSection = activeSection.next();
   var prevSection = activeSection.prev();
 
@@ -255,10 +255,18 @@ function init() {
 
 var player = void 0;
 
+var width = "660";
+
+if ($('.section').width() < 768) {
+  width = "500";
+}
+if ($('.section').width() < 480) {
+  width = "300";
+}
+
 function onYouTubeIframeAPIReady() {
   player = new YT.Player("yt-player", {
-    width: "660",
-    height: "405",
+    width: width,
     videoId: "iM_KMYulI_s",
     playerVars: {
       controls: 0,
