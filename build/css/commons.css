@@ -527,6 +527,7 @@ button:hover {
 .slider-center,
 .slider-center__list,
 .slider-center__item {
+  width: 100vw;
   -ms-flex-preferred-size: 100vw;
       flex-basis: 100vw;
   height: 70vh;
@@ -545,13 +546,13 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 90%; }
+  width: 100%; }
 
 .owl-carousel.owl-loaded {
   display: -webkit-box;
@@ -560,7 +561,6 @@ button:hover {
 
 .burger-image {
   position: relative;
-  width: 43%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -986,7 +986,8 @@ button:hover {
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
   height: 50%;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 .review {
   position: relative;

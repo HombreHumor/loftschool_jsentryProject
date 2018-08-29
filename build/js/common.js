@@ -20,18 +20,6 @@ function accordeon(btn) {
   });
 }
 
-function mobilemenu(btn, closeBtn, menuItem, menu) {
-  $(btn).on('click', function () {
-    $(menu).fadeIn(300);
-  });
-  $(closeBtn).on('click', function () {
-    $(menu).fadeOut(300);
-  });
-  $(menuItem).on('click', function () {
-    $(menu).fadeOut(300);
-  });
-}
-
 function carousel(container, prevBtn, nextBtn) {
   var carousel = $(container).owlCarousel({
     loop: false,
@@ -104,7 +92,6 @@ function modal(params) {
 
 accordeon('.section-team__btn');
 accordeon('.section-menu__button');
-mobilemenu('.hamburger-button', '.mobile__close', '.mobile-nav__link', '.mobile');
 carousel('.owl-carousel', '.slider-left__btn', '.slider-right__btn');
 form();
 modal({
@@ -123,6 +110,23 @@ modal({
 var sections = $(".section");
 var display = $(".main");
 var inScroll = false;
+
+function mobilemenu(btn, closeBtn, menuItem, menu) {
+  $(btn).on('click', function () {
+    $(menu).fadeIn(300);
+    inScroll = true;
+  });
+  $(closeBtn).on('click', function () {
+    $(menu).fadeOut(300);
+    inScroll = false;
+  });
+  $(menuItem).on('click', function () {
+    $(menu).fadeOut(300);
+    inScroll = false;
+  });
+}
+
+mobilemenu('.hamburger-button', '.mobile__close', '.mobile-nav__link', '.mobile');
 
 var mobileDetect = new MobileDetect(window.navigator.userAgent);
 var isMobile = mobileDetect.mobile();

@@ -6,9 +6,23 @@
   html {
     font-size: rem(13px); } }
 
+@media screen and (max-width: 320px) {
+  .header {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; } }
+
 @media screen and (max-width: 768px) {
   .header__menu {
     display: none; } }
+
+@media screen and (max-width: 320px) {
+  .header__order-button {
+    display: none; } }
+
+@media screen and (max-width: 320px) {
+  .header__actions {
+    margin-left: 35vw; } }
 
 @media screen and (max-width: 768px) {
   .section-welcome__content {
@@ -76,14 +90,14 @@
 
 @media screen and (max-width: 768px) {
   .review__hover {
-    font-size: rem(11px);
-    padding: 0 12%;
+    font-size: rem(10px);
+    padding: 0 5px;
     text-align: center; } }
 
 @media screen and (max-width: 768px) {
   .review__title {
     margin-top: rem(14px);
-    margin-bottom: rem(14px); } }
+    margin-bottom: 5px; } }
 
 @media screen and (max-width: 480px) {
   .review__text {
@@ -255,6 +269,10 @@
   .section {
     min-width: 320px; } }
 
+@media screen and (max-width: 320px) {
+  .section {
+    min-width: 220px; } }
+
 @media screen and (max-width: 768px) {
   .section__title {
     max-width: 90%;
@@ -266,11 +284,19 @@
     max-height: 75%;
     font-size: 3rem; } }
 
+@media screen and (max-width: 320px) {
+  .section__title {
+    font-size: 2rem; } }
+
 @media screen and (max-width: 480px) {
   .section-welcome__description {
     font-size: 3rem;
     text-align: center;
     margin: 0; } }
+
+@media screen and (max-width: 320px) {
+  .section-welcome__description {
+    font-size: 2rem; } }
 
 @media screen and (max-width: 768px) {
   .section-we .section__title {
