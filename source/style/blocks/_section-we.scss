@@ -1,13 +1,13 @@
 .section-we {
-  background: url('../images/background/bg-section-2.png') no-repeat;
-  background-size: cover;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  background-position: center center;
   .section__title {
     margin-bottom: rem(80px);
   }
+  display: flex;
+  align-items: center;
+  background: url('../images/background/bg-section-2.png') no-repeat;
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
 }
 
 .section-we__icon-svg--meat {
@@ -30,10 +30,10 @@
 }
 
 .section-we__item {
-  margin-bottom: rem(50px);
-  padding: 0 rem(15px);
   display: flex;
   flex-direction: column;
+  padding: 0 rem(15px);
+  margin-bottom: rem(50px);
 }
 
 .section-we__decription {
@@ -41,8 +41,8 @@
 }
 
 .section-we__title {
-  font-size: rem(24px);
   @include lifehack;
+  font-size: rem(24px);
   color: $black;
   margin-bottom: rem(20px);
 }

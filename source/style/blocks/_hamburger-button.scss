@@ -1,27 +1,27 @@
 .hamburger-button {
-  vertical-align: middle;
   position: relative;
-  height: rem(22px);
-  align-items: center;
-  margin-left: rem(30px);
   display: none;
+  align-items: center;
+  height: rem(22px);
+  vertical-align: middle;
+  margin-left: rem(30px);
 }
 
 .hamburger-button__bars {
   &,
   &:before,
   &:after {
-    background: #fff;
     width: rem(24px);
     height: rem(5px);
     border-radius: rem(3px);
+    background: #fff;
   }
 
   &:before,
   &:after {
-    content: "";
-    display: block;
     position: absolute;
+    display: block;
+    content: "";
   }
 
   &:before {

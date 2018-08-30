@@ -373,6 +373,13 @@ html {
   }
 }
 
+.burger-image__consist-wrapper {
+  @include tablets {
+    top: 90px;
+    left: 0;
+  }
+}
+
 .burger-info {
   @include tablets {
     width: 80%;

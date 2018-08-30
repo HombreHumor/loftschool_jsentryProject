@@ -1,9 +1,9 @@
 .section-burgers {
-  background-image: linear-gradient(to top, #f9b43b, #eb8c38 48%, #f9b43b 74%);
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-image: linear-gradient(to top, #f9b43b, #eb8c38 48%, #f9b43b 74%);
 }
 
 .slider-left {
@@ -11,9 +11,9 @@
   top: 50%;
   left: 1%;
   display: flex;
-  flex-basis: rem(70px);
   justify-content: flex-end;
   align-items: center;
+  flex-basis: rem(70px);
   z-index: 999;
 }
 
@@ -35,20 +35,20 @@
 .slider-center,
 .slider-center__list,
 .slider-center__item {
-  width: 100vw;
-  flex-basis: 100vw;
-  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-basis: 100vw;
+  width: 100vw;
+  height: 70vh;
 }
 
 .slider-center__item-container {
-  height: 70vh;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
+  height: 70vh;
 }
 
 .owl-carousel.owl-loaded {
@@ -57,10 +57,10 @@
 
 .burger-image {
   position: relative;
-  height: 100%;
   display: flex;
-  max-width: 500px;
   align-items: center;
+  max-width: 500px;
+  height: 100%;
 }
 
 .burger-image__picture {
@@ -68,17 +68,78 @@
 }
 
 .burger-image__consist {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   position: absolute;
   top: 0;
   left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 90px;
   height: 90px;
   border-radius: 5px;
   background-color: #f08c33;
+}
+
+.burger-image__consist-wrapper {
+  position: absolute;
+  top: 0;
+  left: 90px;
+  display: flex;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+  width: 270px;
+  max-height: 335px;
+  border-radius: 5px;
+  background: rgba(255,255,255,.9);
+  transition: display .3s ease;
+}
+
+.burger-image__consist-left {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.burger-image__consist-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px;
+}
+
+.burger-image__consist-left-svg {
+  max-width: 45px;
+  max-height: 45px;
+  margin-right: 20px;
+}
+
+.burger-image__consist-left-svg use {
+
+}
+
+.burger-image__consist-intext {
+  @include ubuntu(medium);
+}
+
+.burger-image__consist-weight {
+  @include ubuntu(light);
+  flex: 1;
+  text-align: right;
+}
+
+.burger-image__consist:hover,
+.burger-image__consist:focus {
+  background-color: #e35028;
+}
+
+.burger-image__consist:hover+.burger-image__consist-wrapper,
+.burger-image__consist:focus+.burger-image__consist-wrapper {
+  display: flex;
 }
 
 .burger-image__consist-svg {
@@ -94,13 +155,13 @@
 }
 
 .burger-image__kkal {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   position: absolute;
   bottom: 0;
   left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 60px;
   opacity: .5;
 }
@@ -117,13 +178,13 @@
 }
 
 .burger-image__kkal-icon-number {
+  @include gagalin;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -25%);
-  @include gagalin;
   font-size: rem(20px);
   color: #ffffff;
+  transform: translate(-50%, -25%);
 }
 
 .burger-image__kkal-text {
@@ -134,12 +195,12 @@
 
 .burger-info {
   position: relative;
-  flex: 1;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  flex: 1;
+  height: 100%;
 }
 
 .burger-info__title {
@@ -150,11 +211,11 @@
 .burger-info__text {
   width: 90%;
   font-family: Ubuntu;
-  font-size: rem(14px);
   font-weight: 300;
   font-style: normal;
-  line-height: 1.71;
+  font-size: rem(14px);
   color: #ffffff;
+  line-height: 1.71;
   margin-bottom: 40px;
 }
 
@@ -165,25 +226,25 @@
 
 .burger-info__order-price {
   @include gagalin;
+  align-self: flex-start;
   font-size: rem(72px);
   color: #e35028;
-  align-self: flex-start;
   margin-right: rem(10px);
 }
 
 .burger-info__order-price-text {
   @include gagalin;
+  align-self: center;
   font-size: rem(30px);
   color: #e35028;
-  align-self: center;
   margin-top: rem(25px);
   margin-right: rem(29px);
 }
 
 .burger-info__order-button {
+  align-self: center;
   width: 98px;
   height: 35px;
-  align-self: center;
   margin-top: rem(35px);
 }
 
@@ -192,9 +253,9 @@
   top: 50%;
   right: 1%;
   display: flex;
-  flex-basis: rem(70px);
   justify-content: flex-start;
   align-items: center;
+  flex-basis: rem(70px);
   z-index: 999;
 }
 

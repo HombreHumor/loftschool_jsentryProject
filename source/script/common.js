@@ -1,3 +1,5 @@
+let inScroll = false;
+
 function accordeon(btn) {
   $(btn).on('click', function () {
     let thisBtn = this;
@@ -15,6 +17,21 @@ function accordeon(btn) {
         }
       }
     })
+  });
+}
+
+function mobilemenu(btn, closeBtn, menuItem, menu) {
+  $(btn).on('click', function () {
+    $(menu).fadeIn(300);
+    inScroll = true;
+  });
+  $(closeBtn).on('click', function () {
+    $(menu).fadeOut(300);
+    inScroll = false;
+  });
+  $(menuItem).on('click', function () {
+    $(menu).fadeOut(300);
+    inScroll = false;
   });
 }
 
@@ -57,6 +74,7 @@ function form() {
     }
 
     $.ajax(settings).done(function (response) {
+      inScroll = true;
       $('.overlay--form').fadeIn();
       $('.modal--form').fadeIn();
       if (response.message == "Письмо успешно отправлено") {
@@ -65,6 +83,7 @@ function form() {
         $('.modal__text--formresp').text('При отправке сообщения произошла ошибка!');
       }
       $('.modal__okbtn').on('click', function () {
+        inScroll = false;
         $('.overlay--form').fadeOut();
         $('.modal--form').fadeOut();
       });
@@ -74,6 +93,7 @@ function form() {
 
 function modal(params) {
   $(params.openBtn).on('click', function () {
+    inScroll = true;
     const inTitle = $(this).parent().parent().find(params.title).text();
     const inText = $(this).parent().parent().find(params.text).text();
     $(params.modal).find(params.modalTitle).text(inTitle);
@@ -82,6 +102,7 @@ function modal(params) {
     $(params.modal).fadeIn();
 
     $(params.closeBtn).on('click', function () {
+      inScroll = false;
       $(params.overlay).fadeOut();
       $(params.modal).fadeOut();
     })
@@ -107,22 +128,6 @@ modal({
 
 const sections = $(".section");
 const display = $(".main");
-let inScroll = false;
-
-function mobilemenu(btn, closeBtn, menuItem, menu) {
-  $(btn).on('click', function () {
-    $(menu).fadeIn(300);
-    inScroll = true;
-  });
-  $(closeBtn).on('click', function () {
-    $(menu).fadeOut(300);
-    inScroll = false;
-  });
-  $(menuItem).on('click', function () {
-    $(menu).fadeOut(300);
-    inScroll = false;
-  });
-}
 
 mobilemenu('.hamburger-button', '.mobile__close', '.mobile-nav__link', '.mobile');
 

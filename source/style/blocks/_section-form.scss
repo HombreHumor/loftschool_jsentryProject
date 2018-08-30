@@ -1,16 +1,16 @@
 .section-form {
-  background: url('../images/background/bg-section-8.png') 50% no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
   .section__title {
     text-align: center;
   }
+  display: flex;
+  align-items: center;
+  background: url('../images/background/bg-section-8.png') 50% no-repeat;
+  background-size: cover;
 }
 
 .section-form__content {
-  margin-left: -5%;
   display: flex;
+  margin-left: -5%;
 }
 
 .section-form__column {
@@ -19,32 +19,32 @@
 }
 
 .section-form__row {
+  display: flex;
   margin-bottom: rem(16px);
   margin-left: -10px;
-  display: flex;
 }
 
 .section-form__block {
   display: block;
-  width: 100%;
   flex: 1;
+  width: 100%;
   margin-left: 10px;
 }
 
 .section-form__label {
-  margin-bottom: rem(17px);
   @include ubuntu();
-  color: #fff;
   font-size: rem(14px);
+  color: #fff;
+  margin-bottom: rem(17px);
 }
 
 .section-form__input {
-  font-size: rem(14px);
+  width: 100%;
   padding: rem(10px);
   padding: rem(5px) rem(10px);
   border: rem(1px) solid #d1cfcb;
   border-radius: rem(5px);
-  width: 100%;
+  font-size: rem(14px);
 }
 
 .section-form__textarea {
@@ -54,10 +54,10 @@
 
 .section-form__radio {
   position: relative;
+  display: flex;
   white-space: nowrap;
   margin-right: rem(20px);
   cursor: pointer;
-  display: flex;
 }
 
 .section-form__radio-elem {
@@ -67,24 +67,24 @@
 }
 
 .section-form__radio-fake {
-  width: rem(16px);
-  height: rem(16px);
-  border-radius: 50%;
-  background: #fff;
-  position: relative;
   &:after {
-    content: "";
-    display: block;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
     width: rem(0px);
     height: rem(0px);
     border-radius: 50%;
     background: $red;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
     transition: width .3s, height .3s;
+    content: "";
   }
+  position: relative;
+  width: rem(16px);
+  height: rem(16px);
+  border-radius: 50%;
+  background: #fff;
 }
 
 .section-form__radio-elem:checked {
@@ -117,31 +117,31 @@
   .section-form__radio-elem:checked {
     &+.section-form__radio-fake {
       &:after {
-        background: url("../images/icon/check.png") 50% no-repeat transparent;
-        background-size: contain;
         width: rem(11px);
         height: rem(9px);
+        background: url("../images/icon/check.png") 50% no-repeat transparent;
+        background-size: contain;
       }
     }
   }
 }
 
 .section-form__button {
-  margin-right: rem(20px);
-  border: 0;
-  background: $red;
-  font-size: rem(13px);
-  text-transform: uppercase;
-  border-radius: rem(5px);
-  color: #ffffff;
   @include ubuntu(middle);
   padding: rem(10px) rem(15px);
+  border: 0;
+  border-radius: rem(5px);
+  font-size: rem(13px);
+  color: #ffffff;
+  background: $red;
+  text-transform: uppercase;
+  margin-right: rem(20px);
   cursor: pointer;
 }
 
 .section-form__button--reset {
+  background: transparent;
+  text-transform: none;
   padding-left: 0;
   padding-right: 0;
-  text-transform: none;
-  background: transparent;
 }

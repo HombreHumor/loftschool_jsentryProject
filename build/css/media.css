@@ -352,6 +352,11 @@
     bottom: auto; } }
 
 @media screen and (max-width: 768px) {
+  .burger-image__consist-wrapper {
+    top: 90px;
+    left: 0; } }
+
+@media screen and (max-width: 768px) {
   .burger-info {
     width: 80%;
     -webkit-box-align: center;

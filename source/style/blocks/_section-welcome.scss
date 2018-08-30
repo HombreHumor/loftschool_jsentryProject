@@ -1,8 +1,8 @@
 
 .section-welcome {
+  position: relative;
   background: url('../images/background/bg-section-1.png') center center no-repeat;
   background-size: cover;
-  position: relative;
 }
 
 .section-welcome__content {
@@ -11,9 +11,9 @@
 
 .section-welcome__container {
   display: flex;
-  flex: 1;
   flex-direction: column;
   justify-content: center;
+  flex: 1;
   padding-bottom: 15%;
 }
 
@@ -28,41 +28,41 @@
 }
 
 .section-welcome__description {
+  @include lifehack;
   display: block;
   font-size: rem(65px);
   color: white;
-  @include lifehack;
-  text-transform: lowercase;
   line-height: 1em;
+  text-transform: lowercase;
 }
 
 .section-welcome__big-burger {
-  display: inline-block;
   position: relative;
   left: 50%;
-  transform: translateX(-50%);
+  display: inline-block;
   max-width: 100%;
   max-height: 100%;
+  transform: translateX(-50%);
 }
 
 .down-btn {
+  &:hover {
+    .down-btn__icon {
+      width: rem(45px);
+      height: rem(45px);
+      margin-top: rem(-15px);
+    }
+  }
   position: absolute;
   bottom: rem(20px);
   left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: rem(60px);
+  height: rem(60px);
   transform: translateX(-50%);
   transition: .3s;
-  height: rem(60px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  &:hover {
-    .down-btn__icon {
-      margin-top: rem(-15px);
-      width: rem(45px);
-      height: rem(45px);
-    }
-  }
 }
 
 .down-btn__icon {
