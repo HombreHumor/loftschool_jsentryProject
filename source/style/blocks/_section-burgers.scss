@@ -118,10 +118,6 @@
   margin-right: 20px;
 }
 
-.burger-image__consist-left-svg use {
-
-}
-
 .burger-image__consist-intext {
   @include ubuntu(medium);
 }
@@ -138,7 +134,9 @@
 }
 
 .burger-image__consist:hover+.burger-image__consist-wrapper,
-.burger-image__consist:focus+.burger-image__consist-wrapper {
+.burger-image__consist:focus+.burger-image__consist-wrapper,
+.burger-image__consist-wrapper:hover,
+.burger-image__consist-wrapper:focus {
   display: flex;
 }
 

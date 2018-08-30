@@ -667,7 +667,9 @@ button:hover {
   background-color: #e35028; }
 
 .burger-image__consist:hover + .burger-image__consist-wrapper,
-.burger-image__consist:focus + .burger-image__consist-wrapper {
+.burger-image__consist:focus + .burger-image__consist-wrapper,
+.burger-image__consist-wrapper:hover,
+.burger-image__consist-wrapper:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
